@@ -1,0 +1,96 @@
+//
+// 全局Sass变量
+//
+
+// Colors
+// ------------------
+$color-text-primary:     #343434 !default;
+$color-text-secondary:   #787878 !default;
+$color-text-tertiary:    #AEAEAE !default;
+
+$color-primary:         #72BDBA !default;
+$color-primary-light:   #77C8C5 !default;
+$color-primary-lighter: #81CBC8 !default;
+
+$color-primary2:       #FFE577 !default;
+$color-primary2-light: #FFE988 !default;
+$color-text-primary2:  #9B7F53 !default;
+
+$color-success: $color-primary-lighter !default;
+$color-warning: $color-primary2 !default;
+$color-danger: #FF7676 !default;
+$color-info: #909399 !default;
+
+
+// Link
+// ------------------
+$link-color: #4A90E2 !default;
+$link-decoration: none !default;
+$link-hover-color: mix(#000, $link-color, 20%) !default;
+$link-hover-decoration: underline !default;
+
+
+// Background
+// ------------------
+$background-color-base: #FAFAFA !default;
+$background-color-danger: #FFE5E9 !default;
+$background-color-hover-base: #D7F7F6 !default;
+$background-color-striped-row: #FAFAFA !default;
+
+
+// Border
+// ------------------
+$border-color-base: #D8D8D8 !default;
+$border-color-input-focus: $color-primary-light !default;
+
+$border-radius-base:  4px !default;
+$border-radius-small: 2px !default;
+
+
+// Box-shadow
+// ------------------
+$box-shadow-input: 0 0 4px 0 $background-color-hover-base !default;
+$box-shadow-dropdown: 0 2px 5px 0 #929292 !default;
+$box-shadow-dialog: 1px 2px 15px 4px #5f5f5f !default;
+
+
+// Font
+// ------------------
+$font-size-base:         12px !default;
+$font-size-large:        14px !default;
+$font-size-dialog-title: 16px !default;
+$font-size-extra-large:  18px !default;
+
+$line-height-base: 17/12 !default;
+
+$font-path: 'fonts' !default;
+
+
+// Size
+// ------------------
+$input-width-base: 130px !default;
+$input-height-base: 26px !default;
+$row-height-base: 26px !default;
+
+
+// Button
+// ------------------
+$button-default-color: $color-text-secondary !default; // 默认按钮文字颜色
+
+
+// Pagination
+// ------------------
+$pagination-button-width:  30px !default;
+$pagination-button-height: 28px !default;
+
+
+// z-index
+// ------------------
+$z-index-normal:    1 !default;
+$z-index-popper: 2000 !default;
+
+
+// Dialog
+// ------------------
+$dialog-header-height: 40px !default;
+$dialog-title-line-height: 22px !default;
