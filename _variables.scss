@@ -1,96 +1,73 @@
 //
-// 全局Sass变量
+// 全局Sass变量（该项目专用的 和 覆盖fe-base的）
 //
 
-// Colors
+// Font
 // ------------------
-$color-text-primary:     #343434 !default;
-$color-text-secondary:   #787878 !default;
-$color-text-tertiary:    #AEAEAE !default;
-
-$color-primary:         #72BDBA !default;
-$color-primary-light:   #77C8C5 !default;
-$color-primary-lighter: #81CBC8 !default;
-
-$color-primary2:       #FFE577 !default;
-$color-primary2-light: #FFE988 !default;
-$color-text-primary2:  #9B7F53 !default;
-
-$color-success: $color-primary-lighter !default;
-$color-warning: $color-primary2 !default;
-$color-danger: #FF7676 !default;
-$color-info: #909399 !default;
-
-
-// Link
-// ------------------
-$link-color: #4A90E2 !default;
-$link-decoration: none !default;
-$link-hover-color: mix(#000, $link-color, 20%) !default;
-$link-hover-decoration: underline !default;
+$font-family-base: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑","\5b8b\4f53",Arial,sans-serif !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-weight-base: normal !default;
+$font-path: '~hview/src/styles/fonts' !default;
 
 
 // Background
 // ------------------
-$background-color-base: #FAFAFA !default;
-$background-color-danger: #FFE5E9 !default;
-$background-color-hover-base: #D7F7F6 !default;
-$background-color-striped-row: #FAFAFA !default;
+$background-color-gray-row: #F0F0F0 !default;
+$background-color-yellow-row: #FFF7DA !default;
+$background-color-blue-row: #D9EBFF !default;
+$background-color-pink-row: #FFE9D9 !default;
+$background-color-hover-row: #D7F7F6 !default;
 
 
 // Border
 // ------------------
-$border-color-base: #D8D8D8 !default;
-$border-color-input-focus: $color-primary-light !default;
-
-$border-radius-base:  4px !default;
-$border-radius-small: 2px !default;
+$border-color-middle-line: #B4D7FF !default;
 
 
-// Box-shadow
+// Scrollbar
 // ------------------
-$box-shadow-input: 0 0 4px 0 $background-color-hover-base !default;
-$box-shadow-dropdown: 0 2px 5px 0 #929292 !default;
-$box-shadow-dialog: 1px 2px 15px 4px #5f5f5f !default;
+$scrollbar-size: 10px !default;
 
 
-// Font
+// Header
 // ------------------
-$font-size-base:         12px !default;
-$font-size-large:        14px !default;
-$font-size-dialog-title: 16px !default;
-$font-size-extra-large:  18px !default;
-
-$line-height-base: 17/12 !default;
-
-$font-path: 'fonts' !default;
+$header-background-image: url('/static/img/background.png') !default;
 
 
-// Size
+// Sidebar
 // ------------------
-$input-width-base: 130px !default;
-$input-height-base: 26px !default;
-$row-height-base: 26px !default;
+$sidebar-text-color: #81CBC8 !default;
+$sidebar-text-color-hover: #FFE577 !default;
+$sidebar-bg-color: #18222f !default;
+$sidebar-bg-color-hover: #0b1017 !default;
+$sidebar-detail-report-text-color: #FFAA5B !default;
+$sidebar-detail-report-text-color-hover: #FFC085 !default;
+$sidebar-statistics-report-text-color: #9AD769 !default;
+$sidebar-statistics-report-text-color-hover: #C7FF9A !default;
+$sidebar-module-separator-color: #23293C !default;
 
 
-// Button
+// Logo
 // ------------------
-$button-default-color: $color-text-secondary !default; // 默认按钮文字颜色
+$logo-path: '/static/img/logo.png' !default;
+$logo-collapsed-path: '/static/img/logo-collapsed.jpg' !default;
+$logo-height: 60px !default;
 
 
-// Pagination
-// ------------------
-$pagination-button-width:  30px !default;
-$pagination-button-height: 28px !default;
+// Summary Card
+$summary-card-width:  320px !default;
+$summary-card-gap:     12px !default;
+$summary-card-background-color: #fff !default;
+$summary-card-box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.55) !default;
+$summary-card-hover-box-shadow: 0 0 30px 0 rgba(0,0,0,0.55) !default;
+$summary-card-active-border-width: 4px !default;
+$summary-card-active-border-color: #5FC8C4 !default;
 
 
 // z-index
 // ------------------
-$z-index-normal:    1 !default;
-$z-index-popper: 2000 !default;
-
-
-// Dialog
-// ------------------
-$dialog-header-height: 40px !default;
-$dialog-title-line-height: 22px !default;
+$z-index-normal:             1 !default;
+$z-index-popper:          2000 !default; // select下拉选项、window-input窗体、tooltip、popover等各种弹出组件
+$z-index-loading-mask:   10000 !default; // 加载遮罩
+$z-index-summary-popup:  10001 !default; // 摘要信息层
+$z-index-sidebar-panel:  99999 !default; // 边栏悬浮后显示二级、三级菜单的面板
